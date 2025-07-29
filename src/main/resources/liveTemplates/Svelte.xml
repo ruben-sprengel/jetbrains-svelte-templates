@@ -1,0 +1,261 @@
+<templateSet group="Svelte">
+    <template name="sv-if" value="{#if $IF_EXPRESSION$} $IF_CONTENT$ {/if} $END$ " description="svelte if" toReformat="false" toShortenFQNames="true">
+        <variable name="IF_EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="IF_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-if-el-if" value="{#if $IF_EXPRESSION$} $IF_CONTENT$ {:else if $ELSE_EXPRESSION$} $ELSE_CONTENT$ {/if} $END$" description="svelte if else if" toReformat="false" toShortenFQNames="true">
+        <variable name="IF_EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="IF_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-if-el" value="{#if $IF_EXPRESSION$} $IF_CONTENT$ {:else} $ELSE_CONTENT$ {/if} $END$" description="svelte if else" toReformat="false" toShortenFQNames="true">
+        <variable name="IF_EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="IF_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each" value="{#each $EXPRESSION$ as $NAME$} $CONTENT$ {/each} $END$" description="svelte each" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-index" value="{#each $EXPRESSION$ as $NAME$, $INDEX$} $CONTENT$ {/each} $END$" description="svelte each with index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-keyed" value="{#each $EXPRESSION$ as $NAME$ ($KEY$)} $CONTENT$ {/each} $END$" description="svelte each keyed" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-keyed-index" value="{#each $EXPRESSION$ as $NAME$, $INDEX$ ($KEY$)} $CONTENT$ {/each} $END$" description="svelte each keyed index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-wo-item" value="{#each $EXPRESSION$} $CONTENT$ {/each} $END$" description="svelte each without item" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-wo-item-index" value="{#each $EXPRESSION$, $INDEX$} $CONTENT$ {/each} $END$" description="svelte each without item index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el" value="{#each $EXPRESSION$ as $NAME$} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el-wo-item-index" value="{#each $EXPRESSION$, $INDEX$} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else without item index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el-wo-item" value="{#each $EXPRESSION$} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else without item" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el-keyed-index" value="{#each $EXPRESSION$ as $NAME$, $INDEX$ ($KEY$)} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else keyed index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el-keyed" value="{#each $EXPRESSION$ as $NAME$ ($KEY$)} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else keyed" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-each-el-index" value="{#each $EXPRESSION$ as $NAME$, $INDEX$} $CONTENT$ {:else} $ELSE_CONTENT$ {/each} $END$" description="svelte each else with index" toReformat="false" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ELSE_CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-key" value="{#key $VALUE$} $CONTENT$ {/key} $END$" description="svelte key" toReformat="false" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-snippet" value="{#snippet $NAME$()} $CONTENT$ {/snippet} $END$" description="svelte snippet" toReformat="false" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-snippet-params" value="{#snippet $NAME$($PARAM_1$, $PARAM_N$)} $CONTENT$ {/snippet} $END$" description="svelte snippet with params" toReformat="false" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM_1" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM_N" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-render" value="{@render $NAME$()} $END$" description="svelte render" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-render-params" value="{@render $NAME$($PARAM1$, $PARAM_N$)} $END$" description="svelte render with params" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM_N" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-render-optional" value="{@render $NAME$?.()} $END$" description="svelte render optional" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-render-optional-params" value="{@render $NAME$?.($PARAM1$, $PARAM_N$)} $END$" description="svelte render optional with params" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="PARAM_N" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-render-optional-fallback" value="{#if $NAME$} {@render $NAME$()} {:else} $CONTENT$ {/if} $END$" description="svelte render optional with fallback" toReformat="false" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+</templateSet>
