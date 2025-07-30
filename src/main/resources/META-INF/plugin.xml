@@ -8,45 +8,14 @@
     <description><![CDATA[
       <h1>Provides essential Live Templates for Svelte 5 and SvelteKit.</h1>
       <br>
-      <h2>Available Templates</h2>
-      <h3>Svelte 5</h3>
         <ul>
-            <li>sv-derived (svelte rune derived)</li>
-            <li>sv-each (svelte each)</li>
-            <li>sv-each-el (svelte each else)</li>
-            <li>sv-each-el-index (svelte each else with index)</li>
-            <li>sv-each-el-keyed (svelte each else keyed)</li>
-            <li>sv-each-el-keyed-index (svelte each else keyed index)</li>
-            <li>sv-each-el-wo-item (svelte each else without item)</li>
-            <li>sv-each-el-wo-item-index (svelte each else without item index)</li>
-            <li>sv-each-index (svelte each with index)</li>
-            <li>sv-each-keyed (svelte each keyed)</li>
-            <li>sv-each-keyed-index (svelte each keyed index)</li>
-            <li>sv-each-wo-item (svelte each without item)</li>
-            <li>sv-each-wo-item-index (svelte each without item index)</li>
-            <li>sv-effect (svelte rune effect)</li>
-            <li>sv-host (svelte rune host)</li>
-            <li>sv-if (svelte if)</li>
-            <li>sv-if-el (svelte if else)</li>
-            <li>sv-if-el-if (svelte if else if)</li>
-            <li>sv-inspect (svelte rune inspect)</li>
-            <li>sv-inspect-trace ( svelte rune inspect trace)</li>
-            <li>sv-inspect-with (svelte rune inspect with)</li>
-            <li>sv-key (svelte key)</li>
-            <li>sv-props (svelte rune props)</li>
-            <li>sv-props-fallback-val (svelte rune props with fallback value)</li>
-            <li>sv-props-id ( svelte rune props id )</li>
-            <li>sv-props-typed ( svelte rune props typed )</li>
-            <li>sv-props-typed-interface (svelte rune props typed with interface)</li>
-            <li>sv-render (svelte render)</li>
-            <li>sv-render-optional (svelte render optional)</li>
-            <li>sv-render-optional-fallback (svelte render optional with fallback)</li>
-            <li>sv-render-optional-params (svelte render optional with params)</li>
-            <li>sv-render-params (svelte render params)</li>
-            <li>sv-snippet (svelte snippet)</li>
-            <li>sv-snippet-params (svelte snippet params)</li>
-            <li>sv-state (svelte rune state)</li>
+            <li>Svelte 5 (basic templates, more under active development)</li>
+            <li>SvelteKit  (coming soon)</li>
         </ul>
+        <br>
+         Have a look at the
+        <a href="https://github.com/ruben-sprengel/jetbrains-svelte-templates/blob/main/README.md">jetbrains-svelte-templates README</a>
+        to get more details about the features.
       <h3>Boost your Svelte coding efficiency with these handy snippets!</h3>
     ]]></description>
 
