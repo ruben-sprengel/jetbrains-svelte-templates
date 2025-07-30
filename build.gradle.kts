@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "sprengel.ruben"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,10 @@ intellijPlatform {
         }
 
         changeNotes = """
-      Initial version
+        <h1>Thank you for using `Svelte Templates`!</h1>
+        Have a look at the
+        <a href="https://github.com/ruben-sprengel/jetbrains-svelte-templates/blob/main/CHANGELOG.md">jetbrains-svelte-templates CHANGELOG</a>
+        to get more details about the recent changes.
     """.trimIndent()
     }
 }
