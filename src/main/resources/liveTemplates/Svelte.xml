@@ -258,9 +258,9 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
-    <template name="sv-rune-state" value="let $VAR$ = $state($VAR_VALUE$); $END$" description="svelte rune state" toReformat="true" toShortenFQNames="true">
+    <template name="sv-state" value="let $VAR$ = $state($VALUE$); $END$ " description="svelte rune state" toReformat="true" toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="CSS" value="true"/>
             <option name="HTML" value="true"/>
@@ -268,9 +268,9 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
-    <template name="sv-rune-derived" value="let $VAR$ = $derived($VAR_VALUE$); $END$" description="svelte rune derived" toReformat="true" toShortenFQNames="true">
+    <template name="sv-derived" value="let $VAR$ = $derived($VALUE$); $END$ " description="svelte rune derived" toReformat="true" toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="CSS" value="true"/>
             <option name="HTML" value="true"/>
@@ -278,9 +278,92 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
-    <template name="sv-rune-props" value="let $VAR$ = $props($VAR_VALUE$); $END$" description="svelte rune state" toReformat="true" toShortenFQNames="true">
+    <template name="sv-effect" value="$effect(() => { $CONTENT$ }); $END$ " description="svelte rune effect" toReformat="true" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-props" value="let $VAR$ = $props(); $END$ " description="svelte rune props" toReformat="true" toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-props-fallback-val" value="let { $VAR$ = $VALUE$ } = $props(); $END$ " description="svelte rune props with fallback value" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-props-typed" value="let { $VAR$ }: { $VAR$: $TYPE$ } = $props(); $END$ " description="svelte rune props typed" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-props-typed-interface" value="interface Props { $VAR$: $TYPE$; } let { $VAR$ }: Props = $props(); $END$ " description="svelte rune props typed with interface" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-props-id" value="const $UID$ = $props.id(); $END$ " description="svelte rune props id" toReformat="true" toShortenFQNames="true">
+        <variable name="UID" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-inspect" value="$inspect($VAR$); $END$ " description="svelte rune inspect" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-inspect-with" value="$inspect($VAR$).with(($TYPE$, $VAR$) => { $CONTENT$ }); $END$ " description="svelte rune inspect with" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-inspect-trace" value="$inspect.trace(); $END$ " description="svelte rune inspect trace" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-host" value="$host() $END$ " description="svelte rune host" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="CSS" value="true"/>
             <option name="HTML" value="true"/>

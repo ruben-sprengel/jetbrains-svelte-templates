@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Svelte 5 Live Templates for `runes`
+  - sv-derived (svelte rune derived)
+  - sv-effect (svelte rune effect)
+  - sv-host (svelte rune host)
+  - sv-inspect (svelte rune inspect)
+  - sv-inspect-trace (svelte rune inspect trace)
+  - sv-inspect-with (svelte rune inspect with)
+  - sv-props (svelte rune props)
+  - sv-props-fallback-val (svelte rune props with fallback value)
+  - sv-props-id (svelte rune props id)
+  - sv-props-typed (svelte rune props typed)
+  - sv-props-typed-interface (svelte rune props typed with interface)
+  - sv-state (svelte rune state)
+
 ### Changed
 
 - CHANGELOG (format based now on `Keep a Changelog`)
