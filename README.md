@@ -69,6 +69,12 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 
 ### Available Svelte 5 Live Templates
 
+- sv-attach (svelte attach)
+- sv-await-catch (svelte await catch)
+- sv-await-then (svelte await then)
+- sv-await-wp-then (svelte await with pending then)
+- sv-await-wp-then-catch (svelte await with pending then catch)
+- sv-const (svelte const)
 - sv-derived (svelte rune derived)
 - sv-each (svelte each)
 - sv-each-el (svelte each else)
@@ -84,6 +90,7 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - sv-each-wo-item-index (svelte each without item index)
 - sv-effect (svelte rune effect)
 - sv-host (svelte rune host)
+- sv-html (svelte html)
 - sv-if (svelte if)
 - sv-if-el (svelte if else)
 - sv-if-el-if (svelte if else if)
@@ -93,8 +100,8 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - sv-key (svelte key)
 - sv-props (svelte rune props)
 - sv-props-fallback-val (svelte rune props with fallback value)
-- sv-props-id ( svelte rune props id )
-- sv-props-typed ( svelte rune props typed )
+- sv-props-id (svelte rune props id)
+- sv-props-typed (svelte rune props typed)
 - sv-props-typed-interface (svelte rune props typed with interface)
 - sv-render (svelte render)
 - sv-render-optional (svelte render optional)
@@ -104,3 +111,21 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - sv-snippet (svelte snippet)
 - sv-snippet-params (svelte snippet params)
 - sv-state (svelte rune state)
+
+### Available Svelte 5 Live Templates
+
+- svk-config (sveltekit config)
+- svk-csr (sveltekit csr)
+- svk-error (sveltekit error)
+- svk-form-action-default (sveltekit form action default)
+- svk-form-action-named (sveltekit form action named)
+- svk-form-action-wrapper (sveltekit form action wrapper)
+- svk-get-route (sveltekit get route)
+- svk-hooks (sveltekit hooks)
+- svk-layoutload (sveltekit layout load)
+- svk-pageload (sveltekit page load)
+- svk-pageserverload (sveltekit page server load)
+- svk-post-route (sveltekit post route)
+- svk-prerender (sveltekit prerender)
+- svk-ssr (sveltekit ssr)
+- svk-trailingslash (sveltekit trailingslash)

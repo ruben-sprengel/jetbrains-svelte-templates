@@ -1,0 +1,165 @@
+<templateSet group="SvelteKit">
+    <template name="svk-form-action-wrapper"
+              value="import type { Actions } from './$types'; export const actions = { $CONTENT$ } satisfies Actions; $END$"
+              description="sveltekit form action wrapper" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-form-action-default" value="default: async (event) => { $CONTENT$ } $END$"
+              description="sveltekit form action default" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-form-action-named" value="$NAME$: async (event) => { $CONTENT$ } $END$"
+              description="sveltekit form action named" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-pageload"
+              value="import type { PageLoad } from './$types'; export const load: PageLoad = async ($PARAMS$) => { return { $DATA$ }; }; $END$"
+              description="sveltekit page load" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-pageserverload"
+              value="import type { PageServerLoad } from './$types'; export const load: PageServerLoad = async () => { return { $CONTENT$ }; }; $END$"
+              description="sveltekit page server load" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-layoutload"
+              value="import type { LayoutLoad } from './$types'; export const load: LayoutLoad = () => { return { $CONTENT$ }; }; $END$"
+              description="sveltekit layout load" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-get-route"
+              value="import type { RequestHandler } from './$types'; export const GET: RequestHandler = ($PARAMS$) => { $CONTENT$ return new Response(String($RESPONSE_VALUE$)); }; $END$"
+              description="sveltekit get route" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="RESPONSE_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-post-route"
+              value="import type { RequestHandler } from './$types'; export const POST: RequestHandler = ($PARAMS$) => { $CONTENT$ return new Response(String($RESPONSE_VALUE$)); }; $END$"
+              description="sveltekit post route" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+    <variable name="RESPONSE_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-prerender" value="export const prerender = $STATE$; $END$"
+              description="sveltekit prerender true/false/'auto'" toReformat="true" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-ssr" value="export const ssr = $STATE$; $END$" description="sveltekit ssr true/false"
+              toReformat="true" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-csr" value="export const csr = $STATE$; $END$" description="sveltekit csr true/false"
+              toReformat="true" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-trailingslash" value="export const trailingSlash = $STATE$; $END$"
+              description="sveltekit trailingSlash true/false" toReformat="true" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-config"
+              value="export const config = { runtime: 'edge', regions: 'all', foo: { bar: true } } $END$"
+              description="sveltekit config" toReformat="true" toShortenFQNames="true">
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-hooks"
+              value="import type { Handle } from '@sveltejs/kit'; export const handle: Handle = async ({ event, resolve }) => { if (event.url.pathname.startsWith('/custom')) { return new Response('custom response'); } const response = await resolve(event); return response; }; $END$"
+              description="sveltekit hooks" toReformat="true" toShortenFQNames="true">
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+    <template name="svk-error"
+              value="import { error } from '@sveltejs/kit'; if (!$DATA$) { error(404, { message: 'Not found' }); } $END$"
+              description="sveltekit error" toReformat="true" toShortenFQNames="true">
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true"/>
+    <context>
+        <option name="CSS" value="true"/>
+        <option name="HTML" value="true"/>
+        <option name="JAVA_SCRIPT" value="true"/>
+        <option name="TypeScript" value="true"/>
+    </context>
+    </template>
+</templateSet>
