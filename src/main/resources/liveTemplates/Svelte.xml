@@ -371,4 +371,78 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
+    <template name="sv-await-then" value="{#await $EXPRESSION$ then $NAME$} $CONTENT$ {/await} $END$" description="svelte await then" toReformat="true" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-await-catch" value="{#await $EXPRESSION$ catch $NAME$} $CONTENT$ {/await} $END$" description="svelte await catch" toReformat="true" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-await-wp-then-catch" value="{#await $EXPRESSION$} $CONTENT_PENDING$ {:then $NAME$} $CONTEN_FULFULLEDT$ {:catch name} $CONTEN_ERROR$ {/await} $END$" description="svelte await with pending then catch" toReformat="true" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT_PENDING" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTEN_FULFULLEDT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTEN_ERROR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-await-wp-then" value="{#await $EXPRESSION$} $CONTENT_PENDING$ {:then $NAME$} $CONTEN_FULFULLEDT$ {/await} $END$" description="svelte await with pending then" toReformat="true" toShortenFQNames="true">
+        <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT_PENDING" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTEN_FULFULLEDT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-html" value="{@html $CONTENT$} $END$" description="svelte html" toReformat="true" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-attach" value="{@attach $CONTENT$} $END$" description="svelte attach" toReformat="true" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
+    <template name="sv-const" value="{@const $CONTENT$} $END$" description="svelte const" toReformat="true" toShortenFQNames="true">
+        <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="CSS" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="JAVA_SCRIPT" value="true"/>
+            <option name="TypeScript" value="true"/>
+        </context>
+    </template>
 </templateSet>

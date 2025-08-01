@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.3.0
+
+### Added
+
+- Svelte 5 Live Templates
+  - sv-attach (svelte attach)
+  - sv-await-catch (svelte await catch)
+  - sv-await-then (svelte await then)
+  - sv-await-wp-then (svelte await with pending then)
+  - sv-await-wp-then-catch (svelte await with pending then catch)
+  - sv-const (svelte const)
+  - sv-host (svelte rune host)
+  - sv-html (svelte html)
+
+
+- SvelteKit Live Templates
+  - svk-config (sveltekit config)
+  - svk-csr (sveltekit csr)
+  - svk-error (sveltekit error)
+  - svk-form-action-default (sveltekit form action default)
+  - svk-form-action-named (sveltekit form action named)
+  - svk-form-action-wrapper (sveltekit form action wrapper)
+  - svk-get-route (sveltekit get route)
+  - svk-hooks (sveltekit hooks)
+  - svk-layoutload (sveltekit layout load)
+  - svk-pageload (sveltekit page load)
+  - svk-pageserverload (sveltekit page server load)
+  - svk-post-route (sveltekit post route)
+  - svk-prerender (sveltekit prerender)
+  - svk-ssr (sveltekit ssr)
+  - svk-trailingslash (sveltekit trailingslash)
+
 ## 0.2.0
 
 ### Added
