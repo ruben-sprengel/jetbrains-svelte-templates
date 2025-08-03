@@ -129,3 +129,19 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - svk-prerender (sveltekit prerender)
 - svk-ssr (sveltekit ssr)
 - svk-trailingslash (sveltekit trailingslash)
+
+## Contributing
+
+We welcome contributions to expand and improve this collection of Live Templates!
+
+If you have new templates, improvements to existing ones, or find issues, please check out our **[CONTRIBUTING.md](CONTRIBUTING.md)** guide for more details on how to get involved. Your contributions help make Svelte development even smoother for everyone.
+
+## Support
+
+If you find these Live Templates useful, please consider showing your support!
+
+* **Star this repository** on GitHub. Your stars help us reach more developers.
+* **Review and Star** the Svelte Plugin on the JetBrains Marketplace. Positive reviews encourage continued development.
+* You can also sponsor this project if you'd like to offer further support. See 'sponsor' link on Github or Jetbrains Marketplace.
+
+ **Thank You!**
