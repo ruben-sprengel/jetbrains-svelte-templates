@@ -1,4 +1,5 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rubensprengel)
+[![Jetbrains Marketplace](https://img.shields.io/jetbrains/plugin/v/28046?style=for-the-badge&label=Jetbrains%20Marketplace)](https://plugins.jetbrains.com/plugin/28046-svelte-templates)
 
 # jetbrains-svelte-templates
 
@@ -29,7 +30,7 @@ This is the easiest and recommended method, assuming your plugin is published on
 3. Navigate to `Plugins` in the left-hand menu.
 4. Switch to the `Marketplace` tab.
 5. In the search bar, type `Svelte Templates` or install from
-   the [Marketplace page]([https://plugins.jetbrains.com/plugin/28046-svelte-templates]).
+   the [Marketplace page](https://plugins.jetbrains.com/plugin/28046-svelte-templates).
 6. Click the `Install` button next to the plugin's listing.
 7. After the installation is complete, you will be prompted to `Restart IDE`. Please do so to activate the plugin.
 
@@ -39,7 +40,7 @@ Use this method if you have downloaded the plugin's `.jar` or `.zip` file direct
 beta version, or during development).
 
 1. **Download the Plugin:** Obtain the latest `.jar` or `.zip` file for the plugin from
-   the [GitHub Releases page]([https://github.com/ruben-sprengel/jetbrains-svelte-templates/releases]).
+   the [GitHub Releases page](https://github.com/ruben-sprengel/jetbrains-svelte-templates/releases).
 2. Open your JetBrains IDE.
 3. Go to `File` > `Settings` on Windows/Linux, or `IntelliJ IDEA` / `[Your IDE Name]` > `Preferences` on macOS.
 4. Navigate to `Plugins` in the left-hand menu.
