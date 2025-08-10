@@ -1,5 +1,7 @@
 # jetbrains-svelte-templates 
 
+![logo](jetbrains-svelte-templates-preview-img.jpg)
+
 Svelte and SvelteKit Live Templates for JetBrains IDEs. Accelerate your workflow and reduce boilerplate code!
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rubensprengel)
@@ -93,7 +95,7 @@ Ensure you have a compatible JetBrains IDE (e.g., WebStorm, IntelliJ IDEA Ultima
 3. Search for Svelte Templates.
 4. Click Install and restart your IDE to complete the installation.
 
-or install direclty from the [Marketplace page](https://plugins.jetbrains.com/plugin/28046-svelte-templates).
+or install directly from the [Marketplace page](https://plugins.jetbrains.com/plugin/28046-svelte-templates).
 
 ### Method 2: Manual Installation
 
@@ -118,4 +120,8 @@ We welcome all forms of support!
 - **Support:** Give us a Star here on GitHub and review the plugin on the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/28046-svelte-templates). Your feedback and stars help us reach more developers!
 - **Sponsoring:** You can also support the project with a small donation via the Ko-fi button.
 
-Thank you for your support! 🙏
+**Thank you for your support!** 🙏
+
+### Logo Notice / Disclaimer
+
+The logo for this project was generated with an AI tool. No manual or copyrighted works were used as direct templates.
