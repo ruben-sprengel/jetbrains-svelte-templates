@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rubensprengel)
+
 # jetbrains-svelte-templates
 
 Svelte and SvelteKit Live Templates for Jetbrains IDE
