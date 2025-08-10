@@ -1,76 +1,20 @@
+# jetbrains-svelte-templates 
+
+Svelte and SvelteKit Live Templates for JetBrains IDEs. Accelerate your workflow and reduce boilerplate code!
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rubensprengel)
 [![Jetbrains Marketplace](https://img.shields.io/jetbrains/plugin/v/28046?style=for-the-badge&label=Jetbrains%20Marketplace)](https://plugins.jetbrains.com/plugin/28046-svelte-templates)
+[![GitHub Releases](https://img.shields.io/github/v/release/ruben-sprengel/jetbrains-svelte-templates?style=for-the-badge&label=GitHub%20Release)](https://github.com/ruben-sprengel/jetbrains-svelte-templates/releases)
 
-# jetbrains-svelte-templates
+## Introduction 🚀
 
-Svelte and SvelteKit Live Templates for Jetbrains IDE
+jetbrains-svelte-templates is a compact collection of Live Templates for JetBrains IDEs (like WebStorm and IntelliJ IDEA Ultimate) designed to speed up your Svelte & SvelteKit development. Use these templates to quickly insert essential code and boost your workflow.
 
-## Getting Started
+## Features 💡
 
-This section guides you through the process of installing and getting started with the 'jetbrains-svelte-templates'
-plugin for JetBrains IDEs.
+The plugin provides a wide range of Live Templates, which you can use with simple abbreviations (`sv-*` or `svk-*`) in your code. Just type the abbreviation and press Tab to expand the template.
 
-## Prerequisites
-
-Before you begin, ensure you have a compatible JetBrains IDE installed:
-
-* **JetBrains IDE:** IntelliJ IDEA Ultimate/Community, WebStorm, Pycharm, etc
-* **Version:** 2025.1 or later
-
-## Installation
-
-You have two primary ways to install the plugin:
-
-### 1. Install from JetBrains Marketplace (Recommended)
-
-This is the easiest and recommended method, assuming your plugin is published on the JetBrains Marketplace.
-
-1. Open your JetBrains IDE.
-2. Go to `File` > `Settings` on Windows/Linux, or `IntelliJ IDEA` / `[Your IDE Name]` > `Preferences` on macOS.
-3. Navigate to `Plugins` in the left-hand menu.
-4. Switch to the `Marketplace` tab.
-5. In the search bar, type `Svelte Templates` or install from
-   the [Marketplace page](https://plugins.jetbrains.com/plugin/28046-svelte-templates).
-6. Click the `Install` button next to the plugin's listing.
-7. After the installation is complete, you will be prompted to `Restart IDE`. Please do so to activate the plugin.
-
-### 2. Install from Disk (Manual Installation)
-
-Use this method if you have downloaded the plugin's `.jar` or `.zip` file directly (e.g., from a GitHub Release, for a
-beta version, or during development).
-
-1. **Download the Plugin:** Obtain the latest `.jar` or `.zip` file for the plugin from
-   the [GitHub Releases page](https://github.com/ruben-sprengel/jetbrains-svelte-templates/releases).
-2. Open your JetBrains IDE.
-3. Go to `File` > `Settings` on Windows/Linux, or `IntelliJ IDEA` / `[Your IDE Name]` > `Preferences` on macOS.
-4. Navigate to `Plugins` in the left-hand menu.
-5. Click the **gear icon** (⚙️) or the **`[... ]`** button (depending on your IDE version) next to the `Installed` tab.
-6. Select `Install Plugin from Disk...`.
-7. Browse to the location where you downloaded the `[jetbrains-svelte-templates-$VERSION].jar` (oder `.zip`) file,
-   select it, and click `OK` or `Open`.
-8. You will be prompted to `Restart IDE`. Please do so to activate the plugin.
-
-## Usage
-
-Once installed, the `Svelte Templates` plugin extends your JetBrains IDE with powerful features for your Svelte
-development.
-
-The plugin provides Live Templates, you can find them and explore their usage under:
-
-`Settings` > `Editor` > `Live Templates`
-
-Here, you can see the available templates and their corresponding abbreviations (e.g., `sv-each-wo-item` for Svelte
-`{#each}` with out `item`-variable). Simply type the abbreviation in your code and press `Tab` (default) to expand the
-template.
-
-### Important
-
-Depends on your IDE settings if automated closing from HTML tags are too aggressive, use `ENTER` to switch to the next
-`VAR` / `STEP`
-
-## Features
-
-### Available Svelte 5 Live Templates
+### Live Templates for Svelte 5
 
 - sv-attach (svelte attach)
 - sv-await-catch (svelte await catch)
@@ -115,7 +59,7 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - sv-snippet-params (svelte snippet params)
 - sv-state (svelte rune state)
 
-### Available Svelte 5 Live Templates
+### Live Templates for SvelteKit
 
 - svk-config (sveltekit config)
 - svk-csr (sveltekit csr)
@@ -133,18 +77,45 @@ Depends on your IDE settings if automated closing from HTML tags are too aggress
 - svk-ssr (sveltekit ssr)
 - svk-trailingslash (sveltekit trailingslash)
 
-## Contributing
+## Installation ⚙️
 
-We welcome contributions to expand and improve this collection of Live Templates!
+This section guides you through the process of installing and getting started with the 'jetbrains-svelte-templates'
+plugin for JetBrains IDEs.
 
-If you have new templates, improvements to existing ones, or find issues, please check out our **[CONTRIBUTING.md](CONTRIBUTING.md)** guide for more details on how to get involved. Your contributions help make Svelte development even smoother for everyone.
+## Prerequisites
 
-## Support
+Ensure you have a compatible JetBrains IDE (e.g., WebStorm, IntelliJ IDEA Ultimate) installed, version 2025.1 or later.
 
-If you find these Live Templates useful, please consider showing your support!
+## Method 1: From the JetBrains Marketplace (Recommended)
 
-* **Star this repository** on GitHub. Your stars help us reach more developers.
-* **Review and Star** the Svelte Plugin on the JetBrains Marketplace. Positive reviews encourage continued development.
-* You can also sponsor this project if you'd like to offer further support. See 'sponsor' link on Github or Jetbrains Marketplace.
+1. Open your IDE and go to Settings (Preferences on macOS).
+2. Navigate to Plugins and select the Marketplace tab.
+3. Search for Svelte Templates.
+4. Click Install and restart your IDE to complete the installation.
 
- **Thank You!**
+or install direclty from the [Marketplace page](https://plugins.jetbrains.com/plugin/28046-svelte-templates).
+
+### Method 2: Manual Installation
+
+1. Download the latest `.jar` or `.zip` file from the [GitHub Releases](https://github.com/ruben-sprengel/jetbrains-svelte-templates/releases) page.
+2. In your IDE, go to the `Plugins` settings (as described above).
+3. Click the gear icon (⚙️) and select `Install Plugin from Disk....`
+4. Choose the downloaded `.jar` or `.zip` file and restart your IDE.
+
+## Usage ⌨️
+
+The Live Templates are ready to use immediately. When you type an abbreviation into your Svelte or SvelteKit code and press Tab, the code will be inserted, and you can customize the placeholders (e.g., variable names).
+
+Important Note: If your IDE's automated HTML tag closing is too aggressive, use the Enter key to switch between the placeholders in the Live Templates.
+
+**Tip:** You can find a complete list of all available templates and their shortcuts in your IDE under Settings > Editor > Live Templates > Svelte or SvelteKit.
+
+## Contributing & Support ❤️
+
+We welcome all forms of support!
+
+- **Contributions:** If you'd like to add new templates, improve existing ones, or report issues, please check out our **[CONTRIBUTING.md](CONTRIBUTING.md)** guide.
+- **Support:** Give us a Star here on GitHub and review the plugin on the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/28046-svelte-templates). Your feedback and stars help us reach more developers!
+- **Sponsoring:** You can also support the project with a small donation via the Ko-fi button.
+
+Thank you for your support! 🙏
