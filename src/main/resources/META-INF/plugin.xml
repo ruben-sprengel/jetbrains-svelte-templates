@@ -1,28 +1,48 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>sprengel.ruben.jetbrains-svelte-templates</id>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <name>Svelte Templates</name>
     <vendor url="https://github.com/ruben-sprengel">Ruben Sprengel</vendor>
 
     <description><![CDATA[
-      <h1>Provides essential Live Templates for Svelte 5 and SvelteKit.</h1>
+      <h1>Svelte and SvelteKit Live Templates for JetBrains IDEs. Accelerate your workflow and reduce boilerplate code!</h1>
       <br>
-        <ul>
-            <li>Svelte 5 (sv-*)</li>
-            <li>SvelteKit (svk-*)</li>
-        </ul>
-        <br>
-         Have a look at the
-        <a href="https://github.com/ruben-sprengel/jetbrains-svelte-templates/blob/main/README.md">jetbrains-svelte-templates README</a>
-        to get more details about the features.
-      <h3>Boost your Svelte coding efficiency with these handy snippets!</h3>
+      <h1>Introduction</h1>
+      jetbrains-svelte-templates is a compact collection of Live Templates for JetBrains IDEs (like WebStorm and IntelliJ IDEA Ultimate) designed to speed up your Svelte & SvelteKit development. Use these templates to quickly insert essential code and boost your workflow.
+      <h1>Features</h1>
+      The plugin provides a wide range of Live Templates, which you can use with simple abbreviations (<code>sv-*</code> or <code>svk-*</code>) in your code. Just type the abbreviation and press Tab to expand the template.
+      <br>
+      Have a look at the
+      <a href="https://github.com/ruben-sprengel/jetbrains-svelte-templates/blob/main/README.md">jetbrains-svelte-templates README</a>
+      to get more details about the features.
     ]]></description>
 
     <change-notes><![CDATA[
         <div class="changelog">
-            <h2>0.3.0</h2>
-            <h3>Added</h3>
+            <h1>0.3.1</h1>
+
+            <h2>Added</h2>
+            <ul>
+                <li>CONTRIBUTING.md</li>
+                <li>FUNDING.yml</li>
+            </ul>
+
+            <h2>Changed</h2>
+            <ul>
+                <li>README.md</li>
+            </ul>
+
+            <h2>Fixed</h2>
+            <ul>
+                <li>Fixed live template `sv-await-wp-then-catch` variables (typo and missing variable)</li>
+            </ul>
+
+            <hr>
+
+            <h1>0.3.0</h1>
+
+            <h2>Added</h2>
             <ul>
                 <li><strong>Svelte 5 Live Templates:</strong> Extensive additions for Svelte 5, including <code>attach</code>, <code>await</code> variants (<code>catch</code>, <code>then</code>, <code>with pending</code>), <code>const</code>, <code>host</code>, <code>html</code>.</li>
                 <li><strong>SvelteKit Live Templates:</strong> Many new templates for SvelteKit-specific use cases, such as <code>config</code>, <code>csr</code>, <code>error</code>, <code>form-action</code> variants, <code>hooks</code>, <code>load</code> functions (<code>layoutload</code>, <code>pageload</code>, <code>pageserverload</code>), <code>route</code> methods (<code>get-route</code>, <code>post-route</code>), <code>prerender</code>, and <code>ssr</code> settings.</li>
@@ -30,7 +50,7 @@
 
             <hr>
 
-            <h3>Notable Changes in Previous Versions:</h3>
+            <h1>Notable Changes in Previous Versions:</h1>
             <ul>
                 <li><strong>0.2.0:</strong> Introduced numerous Svelte 5 Live Templates specifically for <code>runes</code> (e.g., <code>derived</code>, <code>effect</code>, <code>inspect</code>, <code>props</code>, <code>state</code>). Updated the changelog format and expanded README details.</li>
                 <li><strong>0.1.0:</strong> Initial Release with basic Svelte 5 Live Templates for Control Flow (<code>each</code>, <code>if</code>) and other features (<code>key</code>, <code>render</code>, <code>snippet</code>).</li>
