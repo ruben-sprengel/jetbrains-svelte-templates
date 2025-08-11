@@ -393,12 +393,13 @@
             <option name="TypeScript" value="true"/>
         </context>
     </template>
-    <template name="sv-await-wp-then-catch" value="{#await $EXPRESSION$} $CONTENT_PENDING$ {:then $NAME$} $CONTEN_FULFULLEDT$ {:catch name} $CONTEN_ERROR$ {/await} $END$" description="svelte await with pending then catch" toReformat="true" toShortenFQNames="true">
+    <template name="sv-await-wp-then-catch" value="{#await $EXPRESSION$} $CONTENT_PENDING$ {:then $NAME$} $CONTENT_FULFILLED$ {:catch $ERROR_NAME$} $CONTEN_ERROR$ {/await} $END$" description="svelte await with pending then catch" toReformat="true" toShortenFQNames="true">
         <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="CONTENT_PENDING" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="CONTEN_FULFULLEDT" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="CONTEN_ERROR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT_FULFILLED" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ERROR_NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CONTENT_ERROR" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="CSS" value="true"/>
             <option name="HTML" value="true"/>
